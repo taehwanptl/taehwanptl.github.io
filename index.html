@@ -1,0 +1,308 @@
+<p>&nbsp;</p>
+<p>CS/CNS/EE 159: Special Topics in Machine Learning: Structured Prediction</p>
+<h1>(CS/CNS/EE 159) Special Topics in Machine Learning: Structured Prediction</h1>
+<p><br /> 2016/2017 Spring Term (<a href="http://www.yisongyue.com/courses/cs159/2016_spring">previous year</a>) <a name="desc"></a></p>
+<h3>Course Description</h3>
+<p class="indented">Prerequisite: background in algorithms, linear algebra, calculus, probability, and statistics (CS/CNS/EE/NB 154 or CS/CNS/EE 156a or instructor&rsquo;s permission)<br /> <br /> This course will cover popular methods in structured prediction.</p>
+<h3>Course Details</h3>
+<ul>
+<li>Lectures on Tu/Th at 2:30pm-4pm in Annenberg 105</li>
+<li>Recitations on Th at 7:30pm-9pm (usually lasting 1 hour), in Annenberg 105</li>
+<li>We will be using Moodle for managing homeworks and grades [<a href="https://courses.caltech.edu/course/view.php?id=2489">link</a>]</li>
+<li>We will be using Piazza for discussion forums and announcements [<a href="https://piazza.com/class/iwwa5fea3ubb1">link</a>]</li>
+<li>Lectures will be video recorded [<a href="https://www.youtube.com/playlist?list=PLuz4CTPOUNi6BfMrltePqMAHdl5W33-bC">link</a>]</li>
+<ul>
+<li>Lecture videos from <a href="http://www.yisongyue.com/courses/cs155/2016_winter">previous year</a> are available <a href="https://www.youtube.com/playlist?list=PL5HdMttxBY0BVTP9y7qQtzTgmcjQ3P0mb">here</a>.</li>
+</ul>
+<li>6 Homeworks (worth approximately 60% of final grade)</li>
+<li>3 Miniprojects (worth approximately 30% of final grade)</li>
+<li>Final Exam (worth approximately 10% of final grade)</li>
+</ul>
+<h3>Instructor</h3>
+<p class="indented"><a href="http://www.yisongyue.com">Yisong Yue</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyue@caltech.edu<br /> <a href="http:ttic.uchicago.edu/~taehwan">Taehwan Kim</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;taehwan@caltech.edu</p>
+<h3>Teaching Assistants</h3>
+<table class="indented">
+<tbody>
+<tr>
+<td>Milan Cvitkovic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>mcvitkov@caltech.edu</td>
+</tr>
+<tr>
+<td>Jagriti Agrawal</td>
+<td>jagrawal@caltech.edu</td>
+</tr>
+<tr>
+<td>Avi Dutta</td>
+<td>adutta@caltech.edu</td>
+</tr>
+<tr>
+<td>Andrew Kang</td>
+<td>akang@caltech.edu</td>
+</tr>
+<tr>
+<td>Emily Mazo</td>
+<td>emazo@caltech.edu</td>
+</tr>
+<tr>
+<td>Sidd Murching</td>
+<td>smurching@caltech.edu</td>
+</tr>
+<tr>
+<td>Suraj Nair</td>
+<td>snair@caltech.edu</td>
+</tr>
+<tr>
+<td>Sarthak Sahu</td>
+<td>ssahu@caltech.edu</td>
+</tr>
+</tbody>
+</table>
+<h3>Office Hours</h3>
+<p><iframe style="border-width: 0;" src="https://www.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=350&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=q0k7dfe04aiibvru2rtg20rdh4%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=America%2FLos_Angeles" width="800" height="350" frameborder="0" scrolling="no"></iframe> <a name="textbook"></a></p>
+<h3>Optional Textbooks</h3>
+<p class="indented">&nbsp;</p>
+<ul>
+<li><a href="http://www.cs.ubc.ca/~murphyk/MLbook/">Machine Learning: a Probabilistic Perspective</a>, by <a href="http://research.google.com/pubs/KevinMurphy.html">Kevin Murphy</a></li>
+<li><a href="http://www.nowpublishers.com/article/Details/MAL-050">Convex Optimization: Algorithms and Complexity</a> (<a href="http://arxiv.org/pdf/1405.4980.pdf">Free Version</a>), by <a href="http://research.microsoft.com/en-us/um/people/sebubeck/">Sebastien Bubeck</a></li>
+<li><a href="http://ciml.info/">A Course in Machine Learning</a>, by <a href="http://www.umiacs.umd.edu/~hal/">Hal Daume III</a></li>
+</ul>
+<p>Since this is an advanced level course, all relevant course materials can be learned via research papers and supplementary lecture notes. However, these books are excellent references and I will refer to various chapters throughout the course.</p>
+<p>&nbsp;</p>
+<p><a name="Assignments"></a></p>
+<h3>Assignments</h3>
+<ul>
+<li>Homework LaTeX template (could be useful for writing homework solutions) [<a href="assignments/cs155_template.zip">zip</a>]</li>
+<li><strong>**Updated Due Time!!**</strong> Homework 1, due 9pm on Jan 13th via Moodle [<a href="assignments/homework1.pdf">assignment</a>][<a href="assignments/homework1_data.zip">data</a>]</li>
+<li>Homework 2, due 9pm on Jan 20th via Moodle [<a href="assignments/homework2.pdf">assignment</a>][<a href="assignments/hw2_supplementary_materials.zip">data</a>]</li>
+<li>Homework 3, due 9pm on Jan 27th via Moodle [<a href="assignments/homework3.pdf">assignment</a>]</li>
+<li>Homework 4, due 9pm on Feb 3rd via Moodle [<a href="assignments/homework4.pdf">assignment</a>][<a href="assignments/hw4code.zip">code</a>]</li>
+<li>Kaggle Miniproject, deadline 2pm on Feb 9th, report due 9pm on Feb 13th <strong>(UPDATED)</strong> via Moodle [<a href="https://piazza.com/class/iwwa5fea3ubb1?cid=117">info</a>]</li>
+<li>Homework 5, due 9pm on Feb 17th via Moodle [<a href="assignments/homework5.pdf">assignment</a>][<a href="assignments/homework5_code.zip">code</a>]</li>
+<li>Miniproject 2, poem submission due 9pm on Feb 24th via Piazza, report due 9pm Feb 27th via Moodle [<a href="assignments/Miniproject2.pdf">assignment</a>][<a href="assignments/project2data.zip">dataset</a>]</li>
+<li>Homework 6, due 9pm on March 3rd via Moodle [<a href="assignments/set6.pdf">assignment</a>][<a href="assignments/set6data.zip">data/code</a>]</li>
+<li>Miniproject 3, due 9pm on March 10th via Moodle [<a href="assignments/project3.pdf">assignment</a>][<a href="assignments/project3data.zip">data</a>][<a href="assignments/project3guide.pdf">guide</a>]</li>
+</ul>
+<p><a name="lectures"></a></p>
+<h3>Lectures &amp; Recitation Schedule</h3>
+<p class="indented">Note: schedule is subject to change.<br /><br /></p>
+<table class="indented schedule">
+<tbody>
+<tr>
+<td class="schedule">&nbsp;</td>
+<td class="schedule">&nbsp;</td>
+<td class="schedule">&nbsp;</td>
+<td class="schedule">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class="schedule"><strong>Further Reading:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">1/05/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Administrivia, Basics, Bias/Variance, Overfitting</td>
+<td class="schedule">[<a href="lectures/Lecture_01.pdf">slides</a>]</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">1/05/2017</td>
+<td class="schedule">Recitation:</td>
+<td class="schedule">Introduction to Python for Machine Learning</td>
+<td class="schedule">[<a href="https://docs.google.com/presentation/d/17J67haaNtU258ZTUGwndria9m5-EBut4kbYGEaI-iJQ/edit?usp=sharing">slides</a>]</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">1/10/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Perceptron, Gradient Descent</td>
+<td class="schedule">[<a href="lectures/Lecture_02.pdf">slides</a>]</td>
+<td class="schedule">Daume Chapter 3<br /> Mistake Bounds for Perceptron [<a href="http://www.cs.nyu.edu/~mohri/pub/pmb.pdf">link</a>]<br /> AdaGrad [<a href="http://www.magicbroom.info/Papers/DuchiHaSi10.pdf">link</a>]<br /> Stochastic Gradient Descent Tricks [<a href="http://research.microsoft.com/pubs/192769/tricks-2012.pdf">link</a>]<br /> Bubeck Chaper 3</td>
+</tr>
+<tr>
+<td class="schedule">1/12/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">SVMs, Logistic Regression, Neural Nets, Loss Functions</td>
+<td class="schedule">[<a href="lectures/Lecture_03.pdf">slides</a>]</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">1/12/2017</td>
+<td class="schedule">Recitation:</td>
+<td class="schedule">Linear Algebra</td>
+<td class="schedule">[<a href="lectures/recitation2.pdf">slides</a>][<a href="lectures/Recitation2Notebook.ipynb">iPython</a>]</td>
+<td class="schedule">The Matrix Cookbook [<a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274">link</a>]</td>
+</tr>
+<tr>
+<td class="schedule">1/17/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Regularization, Lasso</td>
+<td class="schedule">[<a href="lectures/Lecture_04.pdf">slides</a>]</td>
+<td class="schedule">Murphy 13.3</td>
+</tr>
+<tr>
+<td class="schedule">1/19/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Decision Trees, Bagging, Random Forests</td>
+<td class="schedule">[<a href="lectures/Lecture_05.pdf">slides</a>]</td>
+<td class="schedule">Overview of Decision Trees [<a href="http://www.ise.bgu.ac.il/faculty/liorr/hbchap9.pdf">pdf</a>]<br />Overview of Bagging [<a href="http://statistics.berkeley.edu/sites/default/files/tech-reports/421.pdf">pdf</a>]<br />Overview of Random Forests [<a href="https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm">pdf</a>]</td>
+</tr>
+<tr>
+<td class="schedule">1/19/2017</td>
+<td class="schedule">Recitation:</td>
+<td class="schedule">NO RECITATION</td>
+<td class="schedule">&nbsp;</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">1/24/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Boosting, Ensemble Selection</td>
+<td class="schedule">[<a href="lectures/Lecture_06.pdf">slides</a>]</td>
+<td class="schedule">Shapire's Overview of Boosting [<a href="../lectures/msri.pdf">pdf</a>]</td>
+</tr>
+<tr>
+<td class="schedule">1/26/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Deep Learning (taught by <a href="http://joelouismarino.github.io/">Joe Marino</a>)</td>
+<td class="schedule">[<a href="lectures/Lecture_07.pdf">slides</a>]</td>
+<td class="schedule">Deep Learning Book [<a href="http://www.deeplearningbook.org/">html</a>]<br /> A Brief Overview of Deep Learning. [<a href="http://yyue.blogspot.com/2015/01/a-brief-overview-of-deep-learning.html">link</a>]</td>
+</tr>
+<tr>
+<td class="schedule">1/26/2017</td>
+<td class="schedule">Recitation:</td>
+<td class="schedule">Keras Tutorial</td>
+<td class="schedule">[<a href="lectures/recitation3.pdf">slides</a>]</td>
+<td class="schedule">[<a href="https://keras.io/">link</a>]</td>
+</tr>
+<tr>
+<td class="schedule">1/31/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Deep Learning Part 2 (taught by <a href="http://joelouismarino.github.io">Joe Marino</a>)</td>
+<td class="schedule">[<a href="lectures/Lecture_08.pdf">slides</a>]</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">2/2/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Recent Applications</td>
+<td class="schedule">[<a href="lectures/Lecture_09.pdf">slides</a>]</td>
+<td class="schedule">Edge Detection [<a href="https://arxiv.org/abs/1406.5549">paper</a>]<br /> Visual Speech [<a href="http://projects.yisongyue.com/visual_speech/">project</a>][<a href="http://www.yisongyue.com/publications/kdd2015_ssw_dt.pdf">paper</a>]</td>
+</tr>
+<tr>
+<td class="schedule">2/2/2017</td>
+<td class="schedule">Recitation:</td>
+<td class="schedule">Probability &amp; Sampling</td>
+<td class="schedule">[<a href="lectures/recitation4.pdf">slides</a>]</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">2/7/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Probabilistic Models, Naive Bayes</td>
+<td class="schedule">[<a href="lectures/Lecture_10.pdf">slides</a>]</td>
+<td class="schedule">Murphy 3.5</td>
+</tr>
+<tr>
+<td class="schedule">2/9/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Hidden Markov Models</td>
+<td class="schedule">[<a href="lectures/Lecture_11.pdf">slides</a>][<a href="lectures/cs155-hmm-notes.pdf">notes</a>]</td>
+<td class="schedule">Murphy 17.3--17.5</td>
+</tr>
+<tr>
+<td class="schedule">2/9/2017</td>
+<td class="schedule">Recitation:</td>
+<td class="schedule">NO RECITATION</td>
+<td class="schedule">&nbsp;</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">2/14/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule"><strong>**CANCELLED**</strong> Deep Generative Models</td>
+<td class="schedule">&nbsp;</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">2/14/2017 <br /><strong>TUESDAY <br />7-8pm</strong></td>
+<td class="schedule">Recitation:</td>
+<td class="schedule">Dynamic Programming</td>
+<td class="schedule">[<a href="lectures/recitation5.pdf">slides</a>]</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">2/16/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Unsupervised Learning, Clustering, Dimensionality Reduction</td>
+<td class="schedule">[<a href="lectures/Lecture_12.pdf">slides</a>]</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">2/21/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Latent Factor Models, Non-Negative Matrix Factorization</td>
+<td class="schedule">[<a href="lectures/Lecture_13.pdf">slides</a>]</td>
+<td class="schedule">Original Netflix Paper [<a href="http://www.columbia.edu/~jwp2128/Teaching/W4721/papers/ieeecomputer.pdf">link</a>]</td>
+</tr>
+<tr>
+<td class="schedule">2/23/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Embeddings</td>
+<td class="schedule">[<a href="lectures/Lecture_14.pdf">slides</a>]</td>
+<td class="schedule">Locally Linear Embedding [<a href="https://www.cs.nyu.edu/~roweis/lle/">link</a>]<br />Playlist Embedding [<a href="http://www.cs.cornell.edu/People/tj/playlists/">link</a>]<br />word2vec [<a href="https://code.google.com/archive/p/word2vec/">link</a>]</td>
+</tr>
+<tr>
+<td class="schedule">2/23/2017</td>
+<td class="schedule">Recitation:</td>
+<td class="schedule">NO RECITATION</td>
+<td class="schedule">&nbsp;</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">2/28/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Recent Applications</td>
+<td class="schedule">[<a href="lectures/Lecture_15.pdf">slides</a>]</td>
+<td class="schedule">Lasso for cancer detection [<a href="http://www.pnas.org/content/111/7/2436">paper</a>]<br /> Badge dictionary learning from twitter [<a href="https://dl.dropboxusercontent.com/u/16830382/papers/badgepaper-kdd2013.pdf">paper</a>]<br /> Deep learning for visual style [<a href="http://www.cs.cornell.edu/~andreas/iccv15.pdf">paper</a>]</td>
+</tr>
+<tr>
+<td class="schedule">3/2/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Deep Generative Models (taught by <a href="http://ttic.uchicago.edu/~taehwan/">Taehwan Kim</a>)</td>
+<td class="schedule">[<a href="lectures/Lecture_16.pdf">slides</a>]</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">3/2/2017</td>
+<td class="schedule">Recitation:</td>
+<td class="schedule">NO RECITATION</td>
+<td class="schedule">&nbsp;</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">3/7/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Survey of Advanced Topics</td>
+<td class="schedule">[<a href="lectures/Lecture_17.pdf">slides</a>]</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+<tr>
+<td class="schedule">3/9/2017</td>
+<td class="schedule">Lecture:</td>
+<td class="schedule">Review &amp; Q/A</td>
+<td class="schedule">&nbsp;</td>
+<td class="schedule">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h3>Additional References</h3>
+<ul>
+<li>Stochastic Gradient Descent Tricks [<a href="http://research.microsoft.com/pubs/192769/tricks-2012.pdf">link</a>]</li>
+<li>Papers on Ensemble Selection. [<a href="http://www.niculescu-mizil.org/papers/shotgun.icml04.revised.rev2.pdf">paper1</a>][<a href="http://www.niculescu-mizil.org/papers/enssel_most_long.pdf">paper2</a>][<a href="http://www.niculescu-mizil.org/papers/KDDCup09.pdf">KDD Cup Report</a>]</li>
+<li>Practical Bayesian Optimization for Efficient Grid Search of Tuning Parameters. [<a href="http://papers.nips.cc/paper/4522-practical-bayesian-optimization-of-machine-learning-algorithms.pdf">paper</a>][<a href="https://github.com/JasperSnoek/spearmint">software</a>]</li>
+<li>Reasonably Accessible Paper on Regularized Multi-Task Learning. [<a href="http://www0.cs.ucl.ac.uk/staff/M.Pontil/reading/mt-kdd.pdf">paper</a>]</li>
+<li>Overview of Topic Models. [<a href="http://www.cs.princeton.edu/~blei/papers/BleiLafferty2009.pdf">paper</a>]</li>
+<li>Overview of Structural SVMs. [<a href="http://www.yisongyue.com/publications/cacm2009_structsvm.pdf">paper</a>]</li>
+<li>A Brief Overview of Deep Learning. [<a href="http://yyue.blogspot.com/2015/01/a-brief-overview-of-deep-learning.html">link</a>]</li>
+<li>Tutorial on Learning Reductions. [<a href="http://hunch.net/~reductions_tutorial/">pdf</a>]</li>
+<li>The Matrix Cookbook (a lot of useful properties of matrices). [<a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274">link</a>]</li>
+<li>Learning Reductions Overview. [<a href="http://arxiv.org/pdf/1502.02704v1.pdf">paper</a>]</li>
+</ul>
+
