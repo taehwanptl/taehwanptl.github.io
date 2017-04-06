@@ -40,7 +40,7 @@ This course will cover a mixture of the following topics:
    <ul>
         <li> Hierarchical Classification, Sequence Prediction/Generation
    </ul>
-   <li> Applications to Computer Vision, Speech Recognition, NLP, etc
+   <li> Applications to Computer Vision, Speech Recognition, Natural Language Processing, etc
 </ul>
 </p>
 
@@ -98,241 +98,133 @@ Jialin Song</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
       </td>
    </tr>
 </table>
+
+<a name="papers"></a>
+<h3>Topic and Reading List</h3>
 <!--
-<a name="textbook"></a>
-<h3>Optional Textbooks</h3>
-<p class="indented">
-<li><a href="http://www.cs.ubc.ca/~murphyk/MLbook/">Machine Learning: a Probabilistic Perspective</a>,
-by <a href="http://research.google.com/pubs/KevinMurphy.html">Kevin Murphy</a> </li>
-<li><a href="http://www.nowpublishers.com/article/Details/MAL-050">Convex Optimization: Algorithms and Complexity</a> (<a href="http://arxiv.org/pdf/1405.4980.pdf">Free Version</a>), by <a href="http://research.microsoft.com/en-us/um/people/sebubeck/">Sebastien Bubeck</a></li>
-<li><a href="http://ciml.info/">A Course in Machine Learning</a>, by <a href="http://www.umiacs.umd.edu/~hal/">Hal Daume III</a></li>
-Since this is an advanced level course, all relevant course materials can be learned via research papers and supplementary lecture notes.  However, these books are excellent references and I will refer to various chapters throughout the course.
+<p class='indented'>
+<b><a href="https://docs.google.com/spreadsheets/d/11dVEmrZ7rnvnSCxqIjN41bVQztDjpDV-RlDJZKHy7OM/edit#gid=0">Presentation Signup Sheet</a></b>
 </p>
-
-<a name="lectures"></a>
-<h3> Presentation Schedule</h3>
-
-<p class="indented"> Note: schedule is subject to change.<br><br>
-</p>
-
-<table class="indented schedule">
-   <tr>
-      <td class='schedule'></td>
-      <td class='schedule'></td>
-      <td class='schedule'></td>
-      <td class='schedule'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-      <td class='schedule'><b>Further Reading:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/05/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Administrivia, Basics, Bias/Variance, Overfitting</td>
-      <td class='schedule'>[<a href="lectures/Lecture_01.pdf">slides</a>]</td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/05/2017</td>
-      <td class='schedule'>Recitation:</td>
-      <td class='schedule'>Introduction to Python for Machine Learning</td>
-      <td class='schedule'>[<a href="https://docs.google.com/presentation/d/17J67haaNtU258ZTUGwndria9m5-EBut4kbYGEaI-iJQ/edit?usp=sharing">slides</a>] </td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/10/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Perceptron, Gradient Descent</td>
-      <td class='schedule'>[<a href="lectures/Lecture_02.pdf">slides</a>]</td>
-      <td class='schedule'>Daume Chapter 3<br> Mistake Bounds for Perceptron [<a href="http://www.cs.nyu.edu/~mohri/pub/pmb.pdf">link</a>]<br>
-         AdaGrad [<a href="http://www.magicbroom.info/Papers/DuchiHaSi10.pdf">link</a>]<br>
-         Stochastic Gradient Descent Tricks [<a href="http://research.microsoft.com/pubs/192769/tricks-2012.pdf">link</a>]<br>
-         Bubeck Chaper 3
-      </td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/12/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>SVMs, Logistic Regression, Neural Nets, Loss Functions </td>
-      <td class='schedule'>[<a href="lectures/Lecture_03.pdf">slides</a>]</td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/12/2017</td>
-      <td class='schedule'>Recitation:</td>
-      <td class='schedule'>Linear Algebra</td>
-      <td class='schedule'>[<a href="lectures/recitation2.pdf">slides</a>][<a href="lectures/Recitation2Notebook.ipynb">iPython</a>]</td>
-      <td class='schedule'> The Matrix Cookbook [<a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274">link</a>]</td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/17/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Regularization, Lasso</td>
-      <td class='schedule'>[<a href="lectures/Lecture_04.pdf">slides</a>]</td>
-      <td class='schedule'>Murphy 13.3</td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/19/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Decision Trees, Bagging,  Random Forests</td>
-      <td class='schedule'>[<a href="lectures/Lecture_05.pdf">slides</a>]</td>
-      <td class='schedule'>Overview of Decision Trees [<a href="http://www.ise.bgu.ac.il/faculty/liorr/hbchap9.pdf">pdf</a>]<br>Overview of Bagging [<a href="http://statistics.berkeley.edu/sites/default/files/tech-reports/421.pdf">pdf</a>]<br>Overview of Random Forests [<a href="https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm">pdf</a>]</td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/19/2017</td>
-      <td class='schedule'>Recitation:</td>
-      <td class='schedule'>NO RECITATION</td>
-      <td class='schedule'></td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/24/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Boosting, Ensemble Selection</td>
-      <td class='schedule'>[<a href="lectures/Lecture_06.pdf">slides</a>]</td>
-      <td class='schedule'>Shapire's Overview of Boosting [<a href="../lectures/msri.pdf">pdf</a>]</td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/26/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Deep Learning (taught by <a href="http://joelouismarino.github.io/">Joe Marino</a>)</td>
-      <td class='schedule'>[<a href="lectures/Lecture_07.pdf">slides</a>]</td>
-      <td class='schedule'>Deep Learning Book [<a href="http://www.deeplearningbook.org/">html</a>]<br>
-A Brief Overview of Deep Learning. [<a href="http://yyue.blogspot.com/2015/01/a-brief-overview-of-deep-learning.html">link</a>]
-      </td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/26/2017</td>
-      <td class='schedule'>Recitation:</td>
-      <td class='schedule'>Keras Tutorial</td>
-      <td class='schedule'>[<a href="lectures/recitation3.pdf">slides</a>]</td>
-      <td class='schedule'>[<a href="https://keras.io/">link</a>]</td>
-   </tr>
-   <tr>
-      <td class='schedule'>1/31/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Deep Learning Part 2 (taught by <a href="http://joelouismarino.github.io">Joe Marino</a>)</td>
-      <td class='schedule'>[<a href="lectures/Lecture_08.pdf">slides</a>]</td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/2/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Recent Applications</td>
-      <td class='schedule'>[<a href="lectures/Lecture_09.pdf">slides</a>]</td>
-      <td class='schedule'>
-         Edge Detection [<a href="https://arxiv.org/abs/1406.5549">paper</a>]<br>
-         Visual Speech [<a href="http://projects.yisongyue.com/visual_speech/">project</a>][<a href="http://www.yisongyue.com/publications/kdd2015_ssw_dt.pdf">paper</a>]</td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/2/2017</td>
-      <td class='schedule'>Recitation:</td>
-      <td class='schedule'>Probability &amp; Sampling</td>
-      <td class='schedule'>[<a href="lectures/recitation4.pdf">slides</a>]</td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/7/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Probabilistic Models, Naive Bayes</td>
-      <td class='schedule'>[<a href="lectures/Lecture_10.pdf">slides</a>]</td>
-      <td class='schedule'>Murphy 3.5</td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/9/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Hidden Markov Models</td>
-      <td class='schedule'>[<a href="lectures/Lecture_11.pdf">slides</a>][<a href="lectures/cs155-hmm-notes.pdf">notes</a>]</td>
-      <td class='schedule'>Murphy 17.3--17.5</td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/9/2017</td>
-      <td class='schedule'>Recitation:</td>
-      <td class='schedule'>NO RECITATION</td>
-      <td class='schedule'></td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/14/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'><b>**CANCELLED**</b> Deep Generative Models</td>
-      <td class='schedule'></td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/14/2017 <br><b>TUESDAY <br>7-8pm</b></td>
-      <td class='schedule'>Recitation:</td>
-      <td class='schedule'>Dynamic Programming</td>
-      <td class='schedule'>[<a href="lectures/recitation5.pdf">slides</a>]</td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/16/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Unsupervised Learning, Clustering, Dimensionality Reduction</td>
-      <td class='schedule'>[<a href="lectures/Lecture_12.pdf">slides</a>]</td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/21/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Latent Factor Models, Non-Negative Matrix Factorization</td>
-      <td class='schedule'>[<a href="lectures/Lecture_13.pdf">slides</a>]</td>
-      <td class='schedule'>Original Netflix Paper [<a href="http://www.columbia.edu/~jwp2128/Teaching/W4721/papers/ieeecomputer.pdf">link</a>]</td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/23/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Embeddings</td>
-      <td class='schedule'>[<a href="lectures/Lecture_14.pdf">slides</a>]</td>
-      <td class='schedule'>Locally Linear Embedding [<a href="https://www.cs.nyu.edu/~roweis/lle/">link</a>]<br>Playlist Embedding [<a href="http://www.cs.cornell.edu/People/tj/playlists/">link</a>]<br>word2vec [<a href="https://code.google.com/archive/p/word2vec/">link</a>]</td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/23/2017</td>
-      <td class='schedule'>Recitation:</td>
-      <td class='schedule'>NO RECITATION</td>
-      <td class='schedule'></td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>2/28/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Recent Applications</td>
-      <td class='schedule'>[<a href="lectures/Lecture_15.pdf">slides</a>]</td>
-      <td class='schedule'>Lasso for cancer detection [<a href="http://www.pnas.org/content/111/7/2436">paper</a>]<br>
-         Badge dictionary learning from twitter [<a href="https://dl.dropboxusercontent.com/u/16830382/papers/badgepaper-kdd2013.pdf">paper</a>]<br>
-         Deep learning for visual style [<a href="http://www.cs.cornell.edu/~andreas/iccv15.pdf">paper</a>] 
-      </td>
-   </tr>
-   <tr>
-      <td class='schedule'>3/2/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Deep Generative Models (taught by <a href="http://ttic.uchicago.edu/~taehwan/">Taehwan Kim</a>)</td>
-      <td class='schedule'>[<a href="lectures/Lecture_16.pdf">slides</a>]</td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>3/2/2017</td>
-      <td class='schedule'>Recitation:</td>
-      <td class='schedule'>NO RECITATION</td>
-      <td class='schedule'></td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>3/7/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Survey of Advanced Topics</td>
-      <td class='schedule'>[<a href="lectures/Lecture_17.pdf">slides</a>]</td>
-      <td class='schedule'></td>
-   </tr>
-   <tr>
-      <td class='schedule'>3/9/2017</td>
-      <td class='schedule'>Lecture:</td>
-      <td class='schedule'>Review &amp; Q/A</td>
-      <td class='schedule'></td>
-      <td class='schedule'></td>
-   </tr>
-</table>
-
 -->
+<br>  
+<p class='indented'>
+<ul>
+   <li> Inference Methods
+   <ul>
+        <li> Graph Cuts</li>
+        <ul> 
+             <li> Boykov et al, <a href="http://www.cs.sfu.ca/CourseCentral/821/li/material/source/Boykov01.pdf">Fast Approximate Energy Minimization via Graph Cuts, TPAMI 2001ine Learning</a>, TPAMI 2001.  </li>
+             <li> Boykov et al, <a href="http://www.cs.duke.edu/brd/Teaching/Bio/asmb/current/Papers/BVZ-cvpr98.pdf">Markov Random Fields with Efficient Approximations</a>, CVPR 1998 </li>
+        </ul>
+        <li> Linear Programing </li>
+        <ul>
+             <li> Chapter 8.2 and 8.4 in <a href="https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf">Graphical Models, Exponential Families, and Variational Inference</a> by Wainwright and Jordan</li>
+             <li> Sontag et al, <a href="https://arxiv.org/abs/1206.3288">Tightening LP Relaxations for MAP using Message Passing</a>, UAI 2008</li>
+        </ul>
+        <li> Variational Inference</li>
+        <ul>
+             <li> Chapter 5 in <a href="https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf">Graphical Models, Exponential Families, and Variational Inference</a> by Wainwright and Jordan</li>
+             <li> <a href="https://arxiv.org/pdf/1601.00670.pdf">Variational Inference: A Review for Statisticians</a> by Blei</li>
+        </ul>
+   </ul>
+   <li> Graphical Models</li>
+   <ul>
+        <li> Hidden Markov Models (HMM)</li>
+        <ul>
+             <li>Sha and Saul, <a href="https://papers.nips.cc/paper/3051-large-margin-hidden-markov-models-for-automatic-speech-recognition.pdf">Large margin hidden Markov models for automatic speech recognition</a>, NIPS 2007</li>
+             <li>Altun et al, <a href="http://www.aaai.org/Papers/ICML/2003/ICML03-004.pdf">Hidden Markov Support Vector Machines</a>, ICML 2003</li>
+             <li>Dahl et al, <a href="https://www.cs.toronto.edu/~gdahl/papers/DBN4LVCSR-TransASLP.pdf">Context-Dependent Pre-Trained Deep Neural Networks for Large-Vocabulary Speech Recognition</a>, TASLP 2012</li>
+        </ul>
+        <li>Conditional Random Fields (CRF)</li>
+        <ul>
+             <li>Lafferty et al, <a href="https://faculty.cs.byu.edu/~ringger/CS479/papers/LaffertyMcCallumPereira-CRF-icml01.pdf">Conditional random fields: Probabilistic models for segmenting and labeling sequence data</a>, ICML 2001</li>
+             <li>Quattoni et al, <a href="https://papers.nips.cc/paper/2652-conditional-random-fields-for-object-recognition.pdf">Conditional Random Fields for Object Recognition</a>, NIPS 2004</li>
+             <li> Zheng et al, <a href="http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Zheng_Conditional_Random_Fields_ICCV_2015_paper.pdf">Conditional Random Fields as Recurrent Neural Networks</a>, ICCV 2015</li>
+        </ul>
+   </ul> 
+   <li>Topic Model</li>
+   <ul>
+        <li>Blei et al, <a href="http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf">Latent Dirichlet Allocation</a>, JMLR 2003</li>
+        <li><a href="http://www.cs.columbia.edu/~blei/papers/BleiLafferty2009.pdf">Topic models</a> by Blei and Lafferty</li>
+   </ul>
+   <li>Structured Support Vector Machines (SVM) </li>
+   <ul>
+       <li> Tsochantaridis et al, <a href="http://www.jmlr.org/papers/volume6/tsochantaridis05a/tsochantaridis05a.pdf">Large Margin Methods for Structured and Interdependent Output Variables</a>, JMLR 2005</li>
+       <li> Yu and Joachims <a href="http://www.joachims.org/publications/yu_joachims_09a.pdf">Learning structural SVMs with latent variables</a>, ICML 2009</li>
+       <li> Yue and Joachims <a href="http://www.yisongyue.com/publications/icml2008_svmdiv.pdf">Predicting Diverse Subsets Using Structural SVMs</a>, ICML 2008</li>
+   </ul>
+   <li> Hierarchical / Extreme Classification </li>
+   <ul> 
+       <li> Cai and Hofmann, <a href="https://info.cis.uab.edu/zhang/Spam-mining-papers/Hierarchical.Data.Classification.with.Support.Vector.Machines.pdf">Hierarchical document categorization with support vector machines</a>, CIKM 2004</li>
+       <li> Yen et al, <a href="http://www.cs.utexas.edu/~inderjit/public_papers/pdsparse_icml16.pdf">A Primal and Dual Sparse Approach to Extreme Classification</a>, ICML 2016</li>
+   </ul>
+   <li> Structured Perceptron </li>
+   <ul>
+       <li> Collins, <a href="http://acl-arc.comp.nus.edu.sg/archives/acl-arc-090501d4/data/pdf/anthology-PDF/W/W02/W02-1001.pdf">Discriminative Training Methods for Hidden Markov Models: Theory and Experiments with Perceptron Algorithms</a>, ACL 2002</li>
+       <li> McDonald et al, <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36266.pdf">Distributed Training Strategies for the Structured Perceptron</a>, NAACL 2010</li>
+   </ul>
+   <li> Deep Structured Models</li>
+   <ul>
+       <li>MRF/CRF + Deep Learning</li>
+       <ul>
+            <li>Chen et al, <a href="https://arxiv.org/pdf/1407.2538">Learning Deep Structured Models</a>, ICML 2015</li>
+            <li>Schwing and Urtasun, <a href="https://arxiv.org/pdf/1503.02351">Fully Connected Deep Structured Networks</a>, arxiv 2015</li>
+            <li>Chen et al, <a href="https://arxiv.org/pdf/1412.7062">Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs</a>, ICLR 2015</li>
+       </ul>
+       <li> Deep/Convolutional Neural Networks</li>
+       <ul>
+            <li>Sohn et al, <a href="https://papers.nips.cc/paper/5775-learning-structured-output-representation-using-deep-conditional-generative-models.pdf">Learning Structured Output Representation using Deep Conditional Generative Models</a>, NIPS 2015</li>
+            <li>Dosovitskiy et al, <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Dosovitskiy_Learning_to_Generate_2015_CVPR_paper.pdf">Learning to Generate Chairs with Convolutional Neural Networks</a>, CVPR 2015</li>
+            <li>Stewart and Ermon, <a href="https://arxiv.org/pdf/1609.05566">Label-Free Supervision of Neural Networks with Physics and Domain Knowledge</a>, arxiv 2016</li>
+       </ul>
+       <li> Recurrent Neural Networks</li>
+       <ul>
+            <li> Johnson et al, <a href="http://papers.nips.cc/paper/6379-composing-graphical-models-with-neural-networks-for-structured-representations-and-fast-inference.pdf">Composing graphical models with neural networks for structured representations and fast inference</a>, NIPS 2016</li>
+            <li> Ranzatto et al, <a href="https://arxiv.org/pdf/1511.06732">Sequence Level Training with Recurrent Neural Networks</a>, arxiv 2015
+            <li>Alvarez-Melis and Jaakkola, <a href="https://people.csail.mit.edu/tommi/papers/AlvJaa_ICLR2017.pdf">TREE-STRUCTURED DECODING WITH DOUBLYRECURRENT NEURAL NETWORKS</a>, ICLR 2017</li>
+       </ul>
+   </ul>
+   <li> Sequence-to-sequence Model</li>
+   <ul>
+       <li> Kim et al, <a href="http://www.yisongyue.com/publications/kdd2015_ssw_dt.pdf"> A Decision Tree Framework for Spatiotemporal Sequence Prediction</a>, KDD 2015</li>
+       <li> Sutskever et al, <a href="https://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf">Sequence to Sequence Learning with Neural Networks</a>, NIPS 2014</li>
+   </ul>
+   <li> Structured Random Forests </li>
+   <ul>
+       <li> Dollar and Zitnick, <a href="https://pdollar.github.io/files/papers/DollarICCV13edges.pdf">Structured Forests for Fast Edge Detection</a>, ICCV 2013</li>
+       <li> Kontschieder et al, <a href="http://www.dsi.unive.it/~srotabul/files/publications/iccv11.pdf">Structured Class-Labels in Random Forests for Semantic Image Labelling</a>, ICCV 2011</li>
+   </ul>
+   <li> Image Captioning and Generation From Text</li>
+   <ul>
+       <li> Xu et al, <a href="https://arxiv.org/pdf/1502.03044.pdf">Attend and Tell: Neural Image Caption Generation with Visual Attention</a>, ICML 2015</li>
+       <li> Mansimov et al, <a href="https://arxiv.org/pdf/1511.02793.pdf">Generating images from captions with attention</a>, ICLR 2016</li>
+   </ul>
+
+   <li> Optimization </li>
+   <ul>
+       <li> Weiss and Taskar, <a href="http://homes.cs.washington.edu/~taskar/pubs/aistats10cascades.pdf">Structured Prediction Cascades</a>, AISTATS 2010</li>
+       <li> Shi et al, <a href="https://cs.stanford.edu/~pliang/papers/sample-aistats2015.pdf">Learning Where to Sample in Structured Prediction</a>, AISTATS 2015</li>
+   </ul>
+
+   <li> Active Learning</li>
+   <ul>
+       <li>Shivaswamy and Joachims, <a href="http://www.cs.cornell.edu/people/tj/publications/shivaswamy_joachims_12a.pdf">Online Structured Prediction via Coactive Learning</a>, ICML 2012</li>
+       <li> Luo et al, <a href="http://papers.nips.cc/paper/4953-latent-structured-active-learning.pdf">Latent Structured Active Learning</a>, NIPS 2013</li>
+   </ul>
+<!--
+   <li>
+
+   <ul>
+       <li> <a href="
+       <li> <a href="
+       <li> <a href="
+   </ul>
+-->
+ 
+</ul>
+</p>        
+
+
 
 </body>
 
