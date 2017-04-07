@@ -149,6 +149,7 @@ Jialin Song</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
              <li>Lafferty et al, <a href="https://faculty.cs.byu.edu/~ringger/CS479/papers/LaffertyMcCallumPereira-CRF-icml01.pdf">Conditional random fields: Probabilistic models for segmenting and labeling sequence data</a>, ICML 2001</li>
              <li>Quattoni et al, <a href="https://papers.nips.cc/paper/2652-conditional-random-fields-for-object-recognition.pdf">Conditional Random Fields for Object Recognition</a>, NIPS 2004</li>
              <li> Zheng et al, <a href="http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Zheng_Conditional_Random_Fields_ICCV_2015_paper.pdf">Conditional Random Fields as Recurrent Neural Networks</a>, ICCV 2015</li>
+             <li>  Sutton and McCallumAn, <a href="http://homepages.inf.ed.ac.uk/csutton/publications/crftut-fnt.pdf"> Introduction to Conditional Random Fields</a></li>
         </ul>
    </ul> 
    <li>Topic Model</li>
@@ -232,16 +233,162 @@ Jialin Song</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
  
 </ul>
 </p> 
-<!--
 <a name="papers2"></a>
 <h3>Extended Reference Material (could be useful for picking final project)</h3>
 <p class='indented'>Note: some papers belong to multiple categories.</p>
 
-<br>
-<p class="indented">
-<ul>       
 
+<br>  
+<p class='indented'>
+<ul>
+   <li> Inference Methods
+   <ul>
+        <li> Graph Cuts</li>
+        <ul> 
+             <li> Kolmogorov and Zabih, <a href="http://www.cs.cornell.edu/rdz/papers/graph_cuts_pami.pdf">What Energy Functions can be Minimized via Graph Cuts?</a>, TPAMI 2004  </li>
+             <li> Kolmogorov and Rother, <a href="http://luthuli.cs.uiuc.edu/~daf/courses/optimization/mrfpapers/04204169.pdf">Minimizing Nonsubmodular Functions with Graph Cuts—A Review</a>, TPAMI 2007 </li>
+        </ul>
+        <li> Message Passing </li>
+        <ul>
+             <li> Chapter 2.5 in <a href="https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf">Graphical Models, Exponential Families, and Variational Inference</a> by Wainwright and Jordan</li>
+        </ul>
+        <li> Sampling Methods</li>
+        <ul>
+             <li><a href="http://courses.cs.washington.edu/courses/cse515/09sp/slides/sampling.pdf">Sampling-Based Inference</a>, Univ. of Washington lecture note</li>
+             <li> <a href="http://vcla.stat.ucla.edu/old/MCMC/MCMC_tutorial.htm">Markov Chain Monte Carlo for Computer Vision</a></li>
+             <li> <a href="https://media.nips.cc/Conferences/2015/tutorialslides/nips-2015-monte-carlo-tutorial.pdf">Monte Carlo Inference Methods</a>, NIPS 2015 tutorial</li>
+             <li> Andrieu et al, <a href="http://www.cs.ubc.ca/~arnaud/andrieu_defreitas_doucet_jordan_intromontecarlomachinelearning.pdf">An Introduction to MCMC for Machine Learning</a>, Machine Learning 2003</li>
+        </ul>
+
+        <li> Variational Inference</li>
+        <ul>
+             <li><a href="http://www.orchid.ac.uk/eprints/40/1/fox_vbtut.pdf">A Tutorial on Variational Bayesian Inference</a> by Fox and Roberts</li>
+             <li>Blei and Jordan, <a href="http://www.cs.columbia.edu/~blei/papers/BleiJordan2004.pdf">Variational Inference for Dirichlet Process Mixtures</a>, Bayesian Analysis 2006</li>
+        </ul>
+   </ul>
+   <li> Graphical Models</li>
+   <ul>
+        <li> Markov Random Fields (MRF)</li>
+        <ul>
+             <li>Taskar et al, <a href="https://papers.nips.cc/paper/2397-max-margin-markov-networks.pdf">Max-margin Markov networks</a>, NIPS 2003</li>
+             <li>Djolonga et al, <a href="https://las.inf.ethz.ch/files/djolonga16cooperative.pdf">Cooperative Graphical Models</a>, NIPS 2016</li>
+        </ul>
+        <li>Conditional Random Fields (CRF)</li>
+        <ul>
+             <li>Sarawagi and Cohen, <a href="www.cs.cmu.edu/~wcohen/postscript/semiCRF.pdf">Semi-Markov Conditional Random Fields for Information Extraction</a>, NIPS 2004</li>
+             <li>Ammar et al, <a href="https://arxiv.org/pdf/1411.1147.pdf">Conditional Random Field Autoencoders for Unsupervised Structured Prediction</a>, NIPS 2014</li>
+        </ul>
+   </ul> 
+   <li>Topic Model</li>
+   <ul>
+        <li>Wang and McCallum, <a href="https://www.cics.umass.edu/~mccallum/papers/tot-kdd06s.pdf">Topics over Time: A Non-Markov Continuous-Time Model of Topical Trends</a>, KDD 2006</li>
+        <li>Doshi-Velez et al, <a href="http://hips.seas.harvard.edu/files/doshivelez-graphsparse-aaai-2015.pdf">Graph-Sparse LDA: A Topic Model with Structured Sparsity</a>, AAAI 2015</li>
+   </ul>
+<!--
+   <li>Structured Support Vector Machines (SVM) </li>
+   <ul>
+       <li> Tsochantaridis et al, <a href="http://www.jmlr.org/papers/volume6/tsochantaridis05a/tsochantaridis05a.pdf">Large Margin Methods for Structured and Interdependent Output Variables</a>, JMLR 2005</li>
+       <li> Yu and Joachims <a href="http://www.joachims.org/publications/yu_joachims_09a.pdf">Learning structural SVMs with latent variables</a>, ICML 2009</li>
+       <li> Yue and Joachims <a href="http://www.yisongyue.com/publications/icml2008_svmdiv.pdf">Predicting Diverse Subsets Using Structural SVMs</a>, ICML 2008</li>
+   </ul>
+-->   
+   <li> Hierarchical / Extreme Classification </li>
+   <ul> 
+       <li> Keerthi et al, <a href="http://ntucsu.csie.ntu.edu.tw/~cjlin/papers/sdm_kdd.pdf">A sequential dual method for large scale multi-class linear SVMs</a>, KDD 2008</li>
+       <li> Liang et al, <a href="http://www.cs.utexas.edu/~inderjit/public_papers/pdsparse_icml16.pdf">Learning Programs: A Hierarchical Bayesian Approach</a>, ICML 2010</li>
+       <li> Prabhu and Varma, <a href="https://manikvarma.github.io/pubs/prabhu14.pdf"> Fastxml: a fast, accurate and stable tree-classifier for extreme multi-label learning</a>, KDD 2014</li>
+   </ul>
+   <li> Structured Perceptron </li>
+   <ul>
+       <li> Huang et al, <a href="http://www.coli.uni-saarland.de/~yzhang/rapt-ws1112/papers/huang_2008.pdf">Forest Reranking: Discriminative Parsing with Non-Local Features</a>, ACL 2008</li>
+       <li> Liang et al, <a href="https://people.eecs.berkeley.edu/~klein/papers/discriminative-translation.pdf">An End-to-End Discriminative Approach to Machine Translation</a>, ACL 2006</li>
+       <li> Neubig et al, <a href="http://www.phontron.com/paper/neubig12emnlp-reordering.pdf">Inducing a Discriminative Parser for Machine Translation Reordering</a>, EMNLP 2012</li>
+       <li> Roark et al , <a href="http://acl-arc.comp.nus.edu.sg/archives/acl-arc-090501d4/data/pdf/anthology-PDF/P/P04/P04-1007.pdf">Discriminative Language Modeling with Conditional Random Fields and the Perceptron Algorithm</a>, ACL 2004</li>       
+       <li> McDonald et al, <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36266.pdf">Distributed Training Strategies for the Structured Perceptron</a>, NAACL 2010
+</li>
+   </ul>
+   <li> Structured Random Forests </li>
+   <ul>
+       <li> Tang et al, <a href="http://www.iis.ee.ic.ac.uk/dtang/cvpr_14.pdf">Latent Regression Forest: Structured Estimation of 3D Articulated Hand Posture</a>, CVPR 2014</li>
+   </ul>
+   <li> Deep Structured Models</li>
+   <ul>
+    <!--
+       <li>Graphical Model + Deep Learning</li>
+       <ul>
+            <li>Chen et al, <a href="https://arxiv.org/pdf/1407.2538">Learning Deep Structured Models</a>, ICML 2015</li>
+            <li>Schwing and Urtasun, <a href="https://arxiv.org/pdf/1503.02351">Fully Connected Deep Structured Networks</a>, arxiv 2015</li>
+            <li> Johnson et al, <a href="http://papers.nips.cc/paper/6379-composing-graphical-models-with-neural-networks-for-structured-representations-and-fast-inference.pdf">Composing graphical models with neural networks for structured representations and fast inference</a>, NIPS 2016</li>
+            <li>Chen et al, <a href="https://arxiv.org/pdf/1412.7062">Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs</a>, ICLR 2015</li>
+       </ul>
+     -->
+       <li> Deep (Convolutional) Neural Networks</li>
+       <ul>
+            <li>Dong et al, <a href="http://papers.nips.cc/paper/5638-analysis-of-variational-bayesian-latent-dirichlet-allocation-weaker-sparsity-than-map.pdf">Learning a Deep Convolutional Network for Image Super‐Resolution</a>, ECCV 2014</li>
+            <li>Ren et al, <a href="http://papers.nips.cc/paper/5638-analysis-of-variational-bayesian-latent-dirichlet-allocation-weaker-sparsity-than-map.pdf">Faster r-cnn: Towards real-time object detection with region proposal networks</a>, NIPS 2015</li>
+       </ul>
+       <!--
+       <li> Recurrent Neural Networks</li>
+       <ul>
+            <li> Ranzatto et al, <a href="https://arxiv.org/pdf/1511.06732">Sequence Level Training with Recurrent Neural Networks</a>, arxiv 2015
+            <li>Alvarez-Melis and Jaakkola, <a href="https://people.csail.mit.edu/tommi/papers/AlvJaa_ICLR2017.pdf">TREE-STRUCTURED DECODING WITH DOUBLYRECURRENT NEURAL NETWORKS</a>, ICLR 2017</li>
+       </ul>
+     -->
+   </ul>
+   <li> Machine Translation</li>
+   <ul>
+       <li> Auli et al, <a href="https://michaelauli.github.io/papers/rnn-joint-lm-tm.pdf"> Joint Language and Translation Modeling with Recurrent Neural Networks</a>, EMNLP 2013</li>
+       <li> Cho et al, <a href="https://arxiv.org/pdf/1406.1078.pdf">Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation</a>, arxiv 2014</li>
+       <li> Bahdanau et al, <a href="https://arxiv.org/pdf/1409.0473">Neural machine translation by jointly learning to align and translate</a>, ICLR 2015</li>
+   </ul>
+   <li> Image Captioning and Generation From Text</li>
+   <ul>
+       <li> Kuznetsova et al, <a href="http://www.tamaraberg.com/papers/acl_12.pdf">Collective Generation of Natural Image Descriptions</a>, ACL 2012</li>
+       <li> Vinyals et al, <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Vinyals_Show_and_Tell_2015_CVPR_paper.pdf">Show and tell: A neural image caption generator</a>, CVPR 2015</li>
+       <li> Gregor et al, <a href="https://arxiv.org/pdf/1511.02793.pdf">DRAW: A Recurrent Neural Network For Image Generation</a>, arxiv 2015</li>
+   </ul>
+
+   <li> Optimization </li>
+   <ul>
+       <li> He and Taskar, <a href="http://www.cs.jhu.edu/~jason/papers/he+al.nips14.pdf">Learning to Search in Branch-and-Bound Algorithms</a>, NIPS 2014</li>
+       <li> Song et al, <a href="http://www.alexander-schwing.de/papers/SongEtAl_ICML2016.pdf">Training Deep Neural Networks via Direct Loss Minimization</a>, ICML 2016</li>
+       <li> Kuleshov and Liang, <a href="https://cs.stanford.edu/~pliang/papers/calibration-nips2015.pdf">Calibrated Structured Prediction</a>, NIPS 2015</li>
+       <li> Steinhardt and Liang, <a href="https://arxiv.org/pdf/1502.06668.pdf">Learning Fast-Mixing Models for Structured Prediction</a>, ICML 2015</li>                     
+   </ul>
+
+   <li> Others</li>
+   <ul>
+       <li>Richardson and Domingos, <a href="http://homes.cs.washington.edu/~pedrod/papers/mlj05.pdf">Markov Logic Networks</a>, MLJ 2005</li>
+       <li>Krishnan et al, <a href="https://arxiv.org/pdf/1511.05121.pdf">Deep Kalman Filters</a>, arxiv 2015</li>
+       <li>Low et al, <a href="http://www.cs.cornell.edu/home/cardie/papers/ozan-nips14drsv.pdf">GraphLab: A New Framework For Parallel Machine Learning</a>, arxiv 2014</li>
+       <li>Prasad et al, <a href="https://arxiv.org/abs/1411.1752">Submodular meets Structured: Finding Diverse Subsets in Exponentially-Large Structured Item Sets</a>, NIPS 2014</li>
+       <li>Irsoy et al, <a href="http://www.cs.cornell.edu/home/cardie/papers/ozan-nips14drsv.pdf">Deep Recursive Neural Networks for Compositionality in Language</a>, NIPS 2014</li>
+       <li>Belanger and McCallum, <a href="https://arxiv.org/pdf/1511.06350.pdf">Structured Prediction Energy Networks</a>, ICML 2016</li>
+   </ul>
+<!--
+   <li>
+
+   <ul>
+       <li> <a href="
+       <li> <a href="
+       <li> <a href="
+   </ul>
 -->
+
+</ul>
+</p> 
+
+<a name="papers2"></a>
+<h3> Related Tutorials and Textbooks</h3>
+
+<br>  
+<p class='indented'>
+<ul>
+     <li> <a href="http://pgm.stanford.edu/">Probabilistic Graphical Models: Principles and Techniques</a> by Koller and Friedman</li>
+     <li> <a href="http://pub.ist.ac.at/~chl/papers/nowozin-fnt2011.pdf">Structured Learning and Prediction in Computer Vision</a> by Nowozin and Lampert</li>
+     <li> <a href="https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf">Graphical Models, Exponential Families, and Variational Inference</a> by Wainwright and Jordan</li>
+</ul>
+</p>
 
 </body>
 
